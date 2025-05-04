@@ -1,6 +1,5 @@
 create database Loja_de_Material_Escolar;
 use Loja_de_Material_Escolar;
-drop database loja_de_material_escolar;
 
 CREATE TABLE Clientes (
     cliente_id INT AUTO_INCREMENT PRIMARY KEY,
