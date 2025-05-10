@@ -1,6 +1,7 @@
 -- Verificando se há outros bancos de dados
 SHOW DATABASES;
-
+-- Excluir banco de dados
+DROP DATABASE; --Por o nome do banco
 -- Criando um novo banco de dados
 CREATE DATABASE eu_indico;
 
@@ -12,8 +13,7 @@ CREATE TABLE usuario (
     user_id INT AUTO_INCREMENT PRIMARY KEY,       -- Chave primária da tabela
     user_nome VARCHAR(150) NOT NULL,              -- Nome do usuário
     user_email VARCHAR(150) NOT NULL,             -- E-mail do usuário
-    user_senha VARCHAR(150) NOT NULL,             -- Senha do usuário
-    user_avatar BLOB                              -- Avatar/foto de perfil do usuário
+    user_senha VARCHAR(150) NOT NULL             -- Senha do usuário
 );
 
 -- Tabela de gêneros
