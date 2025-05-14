@@ -42,9 +42,9 @@ liv_id int auto_increment primary key,
 liv_titulo varchar (255),
 liv_ano_publicacao int,
 liv_preco decimal (10,2),
-liv_autid int,
+liv_autor int,
 liv_catid int,
-foreign key (liv_autid) references tb_autor(aut_id), 		-- foreign key esta referenciando a coluna da tb_livros 
+foreign key (liv_autor) references tb_autor(aut_id), 		-- foreign key esta referenciando a coluna da tb_livros 
 foreign key (liv_catid) references tb_categoria (cat_id)	-- reference esta referenciado a tabela origial com o id dela (tb_autor [a tabela]) (cat_id [a coluna da tabela])
 );
 -- Visializar a tabela criada
